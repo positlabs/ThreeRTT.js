@@ -11,7 +11,7 @@ ThreeRTT.ShaderMaterial = function (renderTargets, vertexShader, fragmentShader,
   // Allow for array of textures.
   if (textures instanceof Array) {
     var object = {};
-    _.each(textures, function (texture, j) {
+    _.each(textures, function (texture, i) {
       object[textureName(i)] = texture;
     });
     textures = object;
